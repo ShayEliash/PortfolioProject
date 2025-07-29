@@ -1,0 +1,495 @@
+:root {
+    --background-color: #ededed;
+    --color: #000;
+}
+
+.dark {
+    --background-color: #000;
+    --color: #fff;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 16vh;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+#upArrow {
+    width: 6vw;
+    height: 6vh;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 50px;
+    left: 90vW;
+    cursor: pointer;
+}
+
+header {
+    position: sticky;
+    top: 0;
+}
+
+.hamburger {
+    font-size: 1.8em;
+    color: seagreen;
+    width: 300px;
+    padding-left: 20px;
+    display: none;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+
+#hamburger:checked+ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.links>li {
+    padding: 0 10px;
+}
+
+nav {
+    display: flex;
+    width: 100vw;
+    height: 15vh;
+    background-color: #cdcdcd;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    position: relative;
+}
+
+#logo {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    padding: 10px;
+
+}
+
+.links {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 100px 200px 100px;
+
+    align-items: center;
+    align-content: center;
+    gap: 50px;
+}
+
+.links li {
+    float: left;
+}
+
+.links a {
+    display: block;
+    font-size: 2.2em;
+    color: seagreen;
+    text-align: center;
+    padding-left: 25px;
+}
+
+.links a:hover {
+    transform: rotateX(20deg) rotateY(10deg);
+}
+
+#darkMode {
+    width: 10vw;
+    font-size: 1.6em;
+    color: #121212;
+    box-shadow: 4px 4px 8px 8px #121212;
+}
+
+.selfPresentation {
+    display: flex;
+    justify-content: space-evenly;
+    width: 70vw;
+    height: 50vh;
+    margin: 0 auto;
+    background-color: #bccfc6;
+    margin-top: 50px;
+
+}
+
+.myImg {
+    width: 350px;
+    height: 350px;
+}
+
+.selfPresentation h1 {
+    color: seagreen;
+    font-family: sans-serif;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.selfPresentation p {
+    color: seagreen;
+    background-color: #bccfc6;
+    font-family: sans-serif;
+    font-size: 1.5em;
+    text-align: left;
+}
+
+.keySentence {
+    width: 70vw;
+    height: 20vh;
+    margin: 0 auto;
+    background-color: seagreen;
+    font-family: sans-serif;
+    font-size: 2.5em;
+    color: #bccfc6;
+    text-align: center;
+    line-height: 1.6;
+    border-radius: 0 0 30% 30%;
+}
+
+.about {
+    font-size: 2.5em;
+    line-height: 1.8;
+    padding-left: 15px;
+    background-color: #bccfc6;
+}
+
+#aboutMe {
+    width: 65vw;
+    line-height: 1.5;
+    margin: 0 auto;
+    font-size: 1.5em;
+    color: seagreen;
+    font-family: sans-serif;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+#aboutMe h2 {
+    left: 15px;
+}
+
+.myFamilyPics {
+    width: 65vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 100px;
+}
+
+.myFamilyPics img {
+    width: 360px;
+    height: 270px;
+}
+
+.skillsHead {
+    font-size: 1.8rem;
+    color: seagreen;
+    font-family: sans-serif;
+}
+
+.mySkills {
+    display: flex;
+    width: 100vw;
+    height: 15vh;
+    background-color: #bccfc6;
+    justify-content: space-around;
+}
+
+#myProjects {
+    width: 30vw;
+    margin: 0 auto;
+    color: seagreen;
+    background-color: #bccfc6;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 3em;
+    box-shadow: 5px 5px 5px 5px #000;
+    text-decoration-line: underline;
+    margin-top: 100px;
+}
+
+.projectsContainer {
+    width: 70vw;
+    margin: 10px auto;
+    padding-bottom: 220px;
+}
+
+.autismProject {
+    background-color: #bccfc6;
+    font-size: 1.5rem;
+    color: seagreen;
+    text-align: justify;
+    line-height: 1.8;
+    padding-left: 30px;
+    padding-bottom: 100px;
+    border-bottom: solid 4px #ededed;
+}
+
+.autismProject h2 {
+    width: 70vh;
+    margin: 0 auto;
+    font-size: 2.5rem;
+    color: seagreen;
+    padding-left: 100px;
+}
+
+
+.autismProject img {
+    width: 400px;
+    height: 400px;
+}
+
+.projectLink {
+    color: seagreen;
+    font-family: sans-serif;
+    width: 150px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+
+.emotionsCubeProject {
+    background-color: #bccfc6;
+    font-size: 1.5rem;
+    color: seagreen;
+    text-align: justify;
+    line-height: 1.8;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 100px;
+}
+
+.emotionsCubeProject h2 {
+    width: 70vh;
+    margin: 0 auto;
+    font-size: 2.5rem;
+    color: seagreen;
+    padding-left: 100px;
+
+}
+
+.emotionsCubeProject img {
+    width: 400px;
+    height: 400px;
+}
+
+
+#contact {
+    width: 60vw;
+    padding-bottom: 250px;
+    padding-left: 220px;
+
+}
+
+#contact h2 {
+    color: seagreen;
+    font-size: 2.8rem;
+}
+
+#contact form {
+    color: seagreen;
+    font-family: sans-serif;
+    font-size: 2.2rem;
+    line-height: 2;
+    padding-left: 10px;
+    font-family: sans-serif;
+    background-color: #bccfc6;
+}
+
+#contact form input {
+    width: 250px;
+    height: 25px;
+}
+
+#contact form textarea {
+    width: 250px;
+    height: 150px;
+    resize: none;
+}
+
+
+
+footer {
+    width: 100vw;
+    height: 15vh;
+    background-color: #cdcdcd;
+    bottom: 0;
+
+}
+
+footer p {
+    width: 450px;
+    font-size: 1.2em;
+    margin: 0 auto;
+    bottom: 10px;
+}
+
+.footerNav {
+    padding-left: 20px;
+    color: seagreen;
+    font-family: sans-serif;
+    font-size: 1.2em;
+}
+
+.footerNav a {
+    color: seagreen;
+    font-family: sans-serif;
+}
+
+@media (max-width: 576px) {
+
+    /* Body & general */
+    body {
+        font-size: 14px;
+    }
+
+    #upArrow {
+        width: 40px;
+        height: 40px;
+        left: 80%;
+    }
+
+    nav {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .links {
+        display: none;
+        /* Hidden until hamburger is clicked */
+        grid-template-columns: 1fr;
+        gap: 20px;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .links a {
+        font-size: 1.5em;
+        padding: 10px 0;
+    }
+
+    #logo {
+        width: 70px;
+        height: 70px;
+    }
+
+    .selfPresentation {
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .myImg {
+        width: 200px;
+        height: 200px;
+        margin: 0 auto 20px auto;
+    }
+
+    .selfPresentation h1 {
+        font-size: 2em;
+    }
+
+    .selfPresentation p {
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+    .keySentence {
+        width: 90%;
+        font-size: 1.8em;
+        padding: 20px;
+    }
+
+    #aboutMe {
+        width: 90%;
+        font-size: 1.2em;
+        margin: 50px auto;
+    }
+
+    .myFamilyPics {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .myFamilyPics img {
+        width: 90%;
+        height: auto;
+    }
+
+    .mySkills {
+        flex-direction: column;
+        gap: 10px;
+        height: auto;
+        padding: 20px 0;
+    }
+
+    #myProjects {
+        width: 80%;
+        font-size: 2em;
+        padding: 10px;
+    }
+
+    .projectsContainer {
+        width: 90%;
+        padding-bottom: 100px;
+    }
+
+    .autismProject img,
+    .emotionsCubeProject img {
+        width: 90%;
+        height: auto;
+    }
+
+    #contact {
+        width: 90%;
+        padding: 20px;
+    }
+
+    #contact h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    #contact form {
+        font-size: 1.5rem;
+        padding: 15px;
+    }
+
+    #contact form input,
+    #contact form textarea {
+        width: 100%;
+    }
+
+    footer {
+        flex-direction: column;
+        height: auto;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    footer p {
+        width: 90%;
+        font-size: 1em;
+    }
+
+
+
+}

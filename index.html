@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shay Eliash Portfolio Website</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <a href="#top"><img src="images/arrowUp.png" alt="Back To The Top" id="upArrow"></a>
+    <header id="header">
+        <nav>
+            <img src="images/myLogo.jpg" id="logo" alt="My Logo">
+            <label for="hamburger" class="hamburger">&#9776;</label>
+            <input id="hamburger" type="checkbox" hidden>
+            <ul class="links">
+                <li><a href="#aboutMe">About</a></li>
+                <li><a href="#myProjects">My Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button id="darkMode" onclick="
+                    document.documentElement.classList.toggle('dark');
+                    this.innerText = this.innerText === 'Dark Mode' ? 'Light Mode': 'Dark Mode';
+            ">Dark Mode</button>
+
+        </nav>
+    </header>
+    <main>
+        <section class="selfPresentation">
+
+
+            <img src="images/myPic.gif" class="myImg" alt="My Picture">
+
+            <div class="about">
+                <h1>Shay Eliash </h1>
+                <P>A Full Stack Developer</P>
+            </div>
+
+        </section>
+        <section class="keySentence">Designing websites with passion and purpose <br> giving every dream a digital home.
+        </section>
+
+        <article id="aboutMe">
+            <h2>About Me :</h2>
+            <p>Hi, I’m Shay Eliash, a web developer and proud father of three wonderful kids.<br>
+                Web development has always fascinated me, and I even studied it in the past, but like many of us, life
+                led
+                me to a safe
+                and stable path that didn’t allow me to use my full potential or pursue my dream.
+                <br>
+                <br>
+                About a year ago, something shifted inside me. I realized it was time to step out of my comfort zone,
+                take a
+                leap, and
+                return to the field that had always ignited my passion.<br>
+                I took this step to prove to myself and my children that it’s never too late to follow your dreams. It
+                took
+                courage,
+                dedication, and the willingness to start over, but this time I knew I was building a future I truly
+                love.
+                <br>
+                <br>
+                Today, I create websites with a genuine love for design, technology, and meaningful connections. To me,
+                every website is
+                more than just code, it’s a dream coming to life, just like mine did.
+                <br>
+                <br>
+                Here on my website, you can explore some of my projects, learn about my process, and maybe even start a
+                digital
+                journey together.
+            </p>
+        </article>
+        <div class="myFamilyPics">
+            <img src="images/myFamily1.jpg" loading="lazy" alt="My Family">
+            <img src="images/myFamily2.jpg" loading="lazy" alt="My Family">
+            <img src="images/myFamily3.jpg" loading="lazy" alt="My Family">
+        </div>
+
+        <div class="mySkills">
+            <h2 class="skillsHead">
+                MY SKILLS :
+            </h2>
+            <img src="images/html5.jpg" loading="lazy" alt="HTML5">
+            <img src="images/css.jpg" loading="lazy" alt="CSS">
+            <img src="images/JS.jpg" loading="lazy" alt="JAVASCRIPT">
+        </div>
+
+
+        <h1 id="myProjects">MY PROJECTS:</h1><br><br>
+
+        <div class="projectsContainer">
+            <div class="autismProject">
+                <h2>Autism</h2>
+                <p>Hi, I’m Shay, dad to a wonderful autistic child. <br>
+                    <br>
+
+                    Through our journey, I’ve learned that autism is not a problem to solve, but a world to understand.
+                    <br>
+                    I’ve gathered 10 simple truths that changed the way I see everything. <br>
+                    <br>
+
+                    💙 Come read, and see autism with new eyes.
+
+
+                </p>
+                <img src="images/wonderfulChild.jpg" loading="lazy" alt="Autistic Child">
+                <a href="#" class="projectLink">AUTISM</a>
+                <a href="#" class="projectLink">CODE</a>
+            </div>
+            <div class="emotionsCubeProject">
+                <h2>The Emotions Cube</h2>
+                <p>The Emotions Project - Helping Sensitive Teens Grow and Thrive <br>
+                    <br>
+
+                    The Emotions Project supports sensitive teens in understanding and expressing their feelings with
+                    confidence. Through
+                    visual tools, comics, and evidence-based strategies like CBT, mindfulness, and SEL, it creates a
+                    safe space where every
+                    emotion matters. The program empowers teens to connect authentically - and feel free
+                    to be themselves.
+                </p>
+                <img src="images/emotions.jpg" loading="lazy" alt="Emotional Child">
+                <a href="#" class="projectLink">EMOTIONS CUBE</a>
+                <a href="#" class="projectLink">CODE</a>
+            </div>
+
+        </div>
+
+        <div id="contact">
+            <h2>Contact Me:</h2>
+            <form action="">
+                <label for="full_name">* Name:</label>
+                <input type="text" id="full_name" required>
+                <br>
+                <label for="email">* Email:</label>
+                <input type="email" id="email" required>
+                <br>
+                <label for="message">Message: </label><br>
+                <textarea id="message" name="message" rows="5" cols="30" maxlength="50"></textarea><br>
+                <input type="submit" value="SEND">
+            </form>
+        </div>
+
+    </main>
+
+    <footer>
+
+
+
+
+
+        <div class="footerNav">
+            You Can also Contact Me : shay.eliash77@gmail.com<br>
+            <a href="https://www.facebook.com/" target="_blank">Facebook</a><br>
+            <a href="https://github.com/ShayEliash" target="_blank">GitHub</a><br>
+
+        </div>
+
+        <p>© 2025 Created by Shay Eliash. All rights reserved</p>
+
+
+    </footer>
+
+</body>
+
+</html>
