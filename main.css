@@ -376,6 +376,7 @@ footer p {
         gap: 20px;
         text-align: center;
         margin-top: 10px;
+        left: 10%;
     }
 
     .links a {
@@ -386,6 +387,13 @@ footer p {
     #logo {
         width: 70px;
         height: 70px;
+    }
+
+    #darkMode {
+        width: 10vw;
+        font-size: 1em;
+        color: #121212;
+        box-shadow: 2px 2px 5px 5px #121212;
     }
 
     .selfPresentation {
@@ -413,7 +421,7 @@ footer p {
 
     .keySentence {
         width: 90%;
-        font-size: 1.8em;
+        font-size: 1.2em;
         padding: 20px;
     }
 
@@ -450,6 +458,16 @@ footer p {
     .projectsContainer {
         width: 90%;
         padding-bottom: 100px;
+    }
+
+    .emotionsCubeProject h2,
+    .autismProject h2 {
+        width: 70vh;
+        margin: 0 auto;
+        font-size: 1.5rem;
+        color: seagreen;
+
+
     }
 
     .autismProject img,
