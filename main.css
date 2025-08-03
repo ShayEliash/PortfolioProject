@@ -10,7 +10,7 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 16vh;
+    scroll-padding-top: 20vh;
 }
 
 * {
@@ -62,7 +62,6 @@ header {
 nav {
     display: flex;
     width: 100vw;
-    height: 15vh;
     background-color: #cdcdcd;
     justify-content: space-evenly;
     align-items: center;
@@ -94,7 +93,7 @@ nav {
 
 .links a {
     display: block;
-    font-size: 2.2em;
+    font-size: 1.8em;
     color: seagreen;
     text-align: center;
     padding-left: 25px;
@@ -194,6 +193,7 @@ nav {
     font-size: 1.8rem;
     color: seagreen;
     font-family: sans-serif;
+    padding-top: 30px;
 }
 
 .mySkills {
@@ -230,6 +230,7 @@ nav {
     text-align: justify;
     line-height: 1.8;
     padding-left: 30px;
+    padding-right: 30px;
     padding-bottom: 100px;
     border-bottom: solid 4px #ededed;
 }
@@ -355,10 +356,11 @@ footer p {
     #upArrow {
         width: 40px;
         height: 40px;
-        left: 80%;
+        left: 85vw;
     }
 
     nav {
+        width: 100vw;
         flex-direction: column;
         height: auto;
         padding: 10px;
@@ -373,32 +375,38 @@ footer p {
         display: none;
         /* Hidden until hamburger is clicked */
         grid-template-columns: 1fr;
-        gap: 20px;
+        gap: 3px;
         text-align: center;
         margin-top: 10px;
-        left: 10%;
+        position: absolute;
+        left: 15px;
+        top: 40px;
     }
 
     .links a {
-        font-size: 1.5em;
+        font-size: 1.4em;
         padding: 10px 0;
     }
 
     #logo {
-        width: 70px;
-        height: 70px;
+        width: 110px;
+        height: 110px;
     }
 
     #darkMode {
-        width: 10vw;
+        width: 18vw;
+        height: 5vh;
         font-size: 1em;
         color: #121212;
         box-shadow: 2px 2px 5px 5px #121212;
+        position: absolute;
+        left: 70vw;
+        top: 10vh;
     }
 
     .selfPresentation {
         flex-direction: column;
-        width: 90%;
+        width: 90vw;
         height: auto;
         padding: 20px;
         text-align: center;
@@ -420,13 +428,13 @@ footer p {
     }
 
     .keySentence {
-        width: 90%;
+        width: 90vw;
         font-size: 1.2em;
         padding: 20px;
     }
 
     #aboutMe {
-        width: 90%;
+        width: 90vw;
         font-size: 1.2em;
         margin: 50px auto;
     }
@@ -438,46 +446,83 @@ footer p {
     }
 
     .myFamilyPics img {
-        width: 90%;
+        width: 90vw;
         height: auto;
     }
 
     .mySkills {
         flex-direction: column;
-        gap: 10px;
+        gap: 20px;
         height: auto;
         padding: 20px 0;
     }
 
+    .skillsHead {
+        margin: 0 auto;
+        font-size: 1.4rem;
+        color: seagreen;
+        font-family: sans-serif;
+    }
+
+    .mySkills img {
+        width: 80vw;
+        margin: 0 auto;
+    }
+
+
+
     #myProjects {
-        width: 80%;
+        width: 80svw;
+        font-family: sans-serif;
         font-size: 2em;
         padding: 10px;
     }
 
     .projectsContainer {
-        width: 90%;
+        width: 90vw;
         padding-bottom: 100px;
+    }
+
+    .autismProject,
+    .emotionsCubeProject {
+        background-color: #bccfc6;
+        font-size: 1.2rem;
+        color: seagreen;
+        text-align: justify;
+        line-height: 1.4;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 50px;
+        border-bottom: solid 3px #ededed;
     }
 
     .emotionsCubeProject h2,
     .autismProject h2 {
-        width: 70vh;
+        width: 70vw;
         margin: 0 auto;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         color: seagreen;
-
+        font-family: sans-serif;
 
     }
 
     .autismProject img,
     .emotionsCubeProject img {
-        width: 90%;
+        width: 70vw;
         height: auto;
+        padding-bottom: 20px;
+    }
+
+    .projectLink {
+        color: seagreen;
+        font-family: sans-serif;
+        width: 120px;
+        padding-left: 30px;
+        padding-right: 30px;
     }
 
     #contact {
-        width: 90%;
+        width: 90vw;
         padding: 20px;
     }
 
@@ -493,7 +538,7 @@ footer p {
 
     #contact form input,
     #contact form textarea {
-        width: 100%;
+        width: 60vw;
     }
 
     footer {
@@ -504,7 +549,7 @@ footer p {
     }
 
     footer p {
-        width: 90%;
+        width: 90vw;
         font-size: 1em;
     }
 
